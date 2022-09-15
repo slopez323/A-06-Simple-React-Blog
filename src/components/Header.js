@@ -1,9 +1,9 @@
-const Header = () => {
+const Header = ({ user }) => {
   return (
     <header>
       <div>Simple Blog</div>
       <div id="profile-pic">
-        <img src="" alt="profile picture" />
+        {user && <img src={user.url} alt="profile picture" />}
       </div>
     </header>
   );
